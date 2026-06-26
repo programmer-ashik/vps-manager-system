@@ -3,8 +3,6 @@ import { useGetDashboardSummaryQuery } from "../../api/dashboardApi";
 import { Link } from "react-router-dom";
 import StatusBadge from "../../components/common/StatusBadge";
 import { motion } from "framer-motion";
-
-// এনিমেশন ভ্যারিয়েন্ট
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -25,7 +23,7 @@ function StatCard({ label, value, accent = false }) {
       whileHover={{ scale: 1.03, y: -5 }}
       whileTap={{ scale: 0.98 }}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
-      className='p-5 border border-neutral-200 dark:border-neutral-800 rounded-xl bg-white dark:bg-neutral-800 shadow-sm cursor-pointer hover:shadow-md'
+      className='p-5 border border-neutral-200 dark:border-neutral-800 rounded-xl bg-red-500 dark:bg-neutral-800 shadow-sm cursor-pointer hover:shadow-md'
     >
       <h3 className='text-sm font-medium text-neutral-600 dark:text-neutral-400 mb-2'>
         {label}
