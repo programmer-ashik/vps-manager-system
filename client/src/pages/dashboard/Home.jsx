@@ -23,7 +23,7 @@ function StatCard({ label, value, accent = false }) {
       whileHover={{ scale: 1.03, y: -5 }}
       whileTap={{ scale: 0.98 }}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
-      className='p-5 border border-neutral-200 dark:border-neutral-800 rounded-xl bg-red-500 dark:bg-neutral-800 shadow-sm cursor-pointer hover:shadow-md'
+      className='p-5 border border-neutral-200 dark:border-neutral-800 rounded-xl bg-red-500 dark:bg-red-800 shadow-sm cursor-pointer hover:shadow-md'
     >
       <h3 className='text-sm font-medium text-neutral-600 dark:text-neutral-400 mb-2'>
         {label}
@@ -55,7 +55,7 @@ export default function Home() {
       initial='hidden'
       animate='visible'
       variants={containerVariants}
-      className='max-w-7xl mx-auto p-4'
+      className='max-w-7xl mx-auto p-4 bg-yellow-500'
     >
       <div className='mb-8'>
         <h1 className='text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-2'>
